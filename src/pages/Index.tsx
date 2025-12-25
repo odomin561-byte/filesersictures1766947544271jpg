@@ -1,12 +1,46 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import HeroSection from "@/components/home/HeroSection";
+import FeaturedSection from "@/components/home/FeaturedSection";
+import AboutPreview from "@/components/home/AboutPreview";
+
+import heroImage from "@/assets/hero-pearl-bag.jpg";
+import product1 from "@/assets/product-1.jpg";
+import product2 from "@/assets/product-2.jpg";
+import product3 from "@/assets/product-3.jpg";
+import craftImage from "@/assets/craft-process.jpg";
+
+const featuredProducts = [
+  {
+    id: 1,
+    name: "Жемчужная Грация",
+    description: "Классическая элегантность в каждой бусине",
+    image: product1,
+  },
+  {
+    id: 2,
+    name: "Шампань Делюкс",
+    description: "Тёплые оттенки для особого вечера",
+    image: product2,
+  },
+  {
+    id: 3,
+    name: "Розовая Мечта",
+    description: "Яркий акцент для смелых образов",
+    image: product3,
+  },
+];
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main>
+        <HeroSection heroImage={heroImage} />
+        <FeaturedSection products={featuredProducts} />
+        <AboutPreview craftImage={craftImage} />
+      </main>
+      <Footer />
     </div>
   );
 };

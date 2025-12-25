@@ -1,0 +1,176 @@
+import { useState } from "react";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+
+import product1 from "@/assets/product-1.jpg";
+import product2 from "@/assets/product-2.jpg";
+import product3 from "@/assets/product-3.jpg";
+
+const allProducts = [
+  {
+    id: 1,
+    name: "Жемчужная Грация",
+    category: "Вечерние",
+    description: "Классическая элегантность в каждой бусине. Идеально подходит для свадеб и торжеств.",
+    image: product1,
+    price: "12 500 ₽",
+  },
+  {
+    id: 2,
+    name: "Шампань Делюкс",
+    category: "Вечерние",
+    description: "Тёплые оттенки шампанского для особого вечера. Создана из редких японских бусин.",
+    image: product2,
+    price: "15 800 ₽",
+  },
+  {
+    id: 3,
+    name: "Розовая Мечта",
+    category: "Повседневные",
+    description: "Яркий и стильный акцент для смелых образов. Лёгкая и практичная.",
+    image: product3,
+    price: "9 200 ₽",
+  },
+  {
+    id: 4,
+    name: "Классика Перла",
+    category: "Классические",
+    description: "Вневременная красота белого жемчуга. Универсальная модель на каждый день.",
+    image: product1,
+    price: "11 400 ₽",
+  },
+  {
+    id: 5,
+    name: "Золотая Осень",
+    category: "Вечерние",
+    description: "Тёплые золотистые тона для осеннего сезона. Эксклюзивная ручная работа.",
+    image: product2,
+    price: "18 000 ₽",
+  },
+  {
+    id: 6,
+    name: "Нежность Рассвета",
+    category: "Повседневные",
+    description: "Мягкие розовые переливы для романтических натур.",
+    image: product3,
+    price: "10 500 ₽",
+  },
+];
+
+const categories = ["Все", "Вечерние", "Повседневные", "Классические"];
+
+const Collection = () => {
+  const [activeCategory, setActiveCategory] = useState("Все");
+
+  const filteredProducts = activeCategory === "Все" 
+    ? allProducts 
+    : allProducts.filter(p => p.category === activeCategory);
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main className="pt-20">
+        {/* Hero */}
+        <section className="py-20 md:py-28 bg-gradient-pearl text-center">
+          <div className="container mx-auto px-4 md:px-8">
+            <span className="text-rose-gold font-body text-sm tracking-[0.3em] uppercase">
+              Наши работы
+            </span>
+            <h1 className="font-display text-4xl md:text-6xl font-light mt-4 mb-6">
+              Коллекция <span className="italic font-medium">изделий</span>
+            </h1>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Каждая сумочка в нашей коллекции — это уникальное произведение искусства, 
+              созданное вручную с любовью и вниманием к деталям.
+            </p>
+          </div>
+        </section>
+
+        {/* Filters */}
+        <section className="py-8 border-b border-border/50">
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="flex flex-wrap justify-center gap-4">
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  onClick={() => setActiveCategory(category)}
+                  className={`px-6 py-2 rounded-full font-body text-sm tracking-wide transition-all duration-300 ${
+                    activeCategory === category
+                      ? "bg-rose-gold text-primary-foreground"
+                      : "bg-secondary text-muted-foreground hover:bg-champagne hover:text-foreground"
+                  }`}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Products Grid */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+              {filteredProducts.map((product, index) => (
+                <article
+                  key={product.id}
+                  className="group animate-fade-in-up opacity-0"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="relative aspect-[3/4] overflow-hidden rounded-lg mb-5 shadow-soft">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute top-4 left-4">
+                      <span className="inline-block bg-pearl-shimmer/90 backdrop-blur-sm text-foreground text-xs tracking-widest uppercase px-3 py-1.5 rounded-full">
+                        {product.category}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <h3 className="font-display text-xl font-medium group-hover:text-rose-gold transition-colors">
+                        {product.name}
+                      </h3>
+                      <p className="text-muted-foreground text-sm mt-2 line-clamp-2">
+                        {product.description}
+                      </p>
+                    </div>
+                    <span className="font-display text-lg text-rose-gold whitespace-nowrap ml-4">
+                      {product.price}
+                    </span>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="py-16 md:py-24 bg-ivory">
+          <div className="container mx-auto px-4 md:px-8 text-center">
+            <h2 className="font-display text-3xl md:text-4xl font-light mb-4">
+              Хотите <span className="italic font-medium">индивидуальный</span> заказ?
+            </h2>
+            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
+              Мы создаём сумочки по индивидуальным эскизам. 
+              Свяжитесь с нами для обсуждения вашей уникальной идеи.
+            </p>
+            <a
+              href="/about"
+              className="inline-block bg-rose-gold text-primary-foreground px-8 py-4 rounded-lg font-body tracking-wide hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
+            >
+              Связаться с нами
+            </a>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default Collection;
