@@ -13,7 +13,7 @@ import craftImage from "@/assets/craft-process.jpg";
 const featuredProducts = [
   {
     id: 1,
-    name: "Жемчужная Грация",
+    name: "Клатч из акриловых бусин",
     description: "Классическая элегантность в каждой бусине",
     image: product1,
   },
