@@ -5,11 +5,12 @@ import Footer from "@/components/layout/Footer";
 import product1 from "@/assets/product-1.jpg";
 import product2 from "@/assets/product-2.jpg";
 import product3 from "@/assets/product-3.jpg";
+import product4Video from "@/assets/product-4-video.mp4";
 
 const allProducts = [
   {
     id: 1,
-    name: "Жемчужная Грация",
+    name: "Клатч из акриловых бусин",
     category: "Вечерние",
     description: "Классическая элегантность в каждой бусине. Идеально подходит для свадеб и торжеств.",
     image: product1,
@@ -33,6 +34,14 @@ const allProducts = [
   },
   {
     id: 4,
+    name: "Видео-презентация",
+    category: "Вечерние",
+    description: "Посмотрите наши изделия в движении. Эксклюзивная демонстрация мастерства.",
+    video: product4Video,
+    price: "По запросу",
+  },
+  {
+    id: 5,
     name: "Классика Перла",
     category: "Классические",
     description: "Вневременная красота белого жемчуга. Универсальная модель на каждый день.",
@@ -40,7 +49,7 @@ const allProducts = [
     price: "11 400 ₽",
   },
   {
-    id: 5,
+    id: 6,
     name: "Золотая Осень",
     category: "Вечерние",
     description: "Тёплые золотистые тона для осеннего сезона. Эксклюзивная ручная работа.",
@@ -48,7 +57,7 @@ const allProducts = [
     price: "18 000 ₽",
   },
   {
-    id: 6,
+    id: 7,
     name: "Нежность Рассвета",
     category: "Повседневные",
     description: "Мягкие розовые переливы для романтических натур.",
@@ -118,11 +127,22 @@ const Collection = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="relative aspect-[3/4] overflow-hidden rounded-lg mb-5 shadow-soft">
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
+                    {'video' in product && product.video ? (
+                      <video
+                        src={product.video}
+                        className="w-full h-full object-cover"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                      />
+                    ) : (
+                      <img
+                        src={'image' in product ? product.image : ''}
+                        alt={product.name}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                    )}
                     <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     <div className="absolute top-4 left-4">
                       <span className="inline-block bg-pearl-shimmer/90 backdrop-blur-sm text-foreground text-xs tracking-widest uppercase px-3 py-1.5 rounded-full">
