@@ -6,6 +6,7 @@ import product1 from "@/assets/product-1.jpg";
 import product2 from "@/assets/product-2.jpg";
 import product3 from "@/assets/product-3.jpg";
 import product4Video from "@/assets/product-4-video.mp4";
+import product5Video from "@/assets/product-5-video.mp4";
 import product6Video from "@/assets/product-6-video.mp4";
 
 const allProducts = [
@@ -43,11 +44,11 @@ const allProducts = [
   },
   {
     id: 5,
-    name: "Классика Перла",
+    name: "Видео-обзор",
     category: "Классические",
-    description: "Вневременная красота белого жемчуга. Универсальная модель на каждый день.",
-    image: product1,
-    price: "11 400 ₽",
+    description: "Посмотрите классические модели нашей коллекции в движении.",
+    video: product5Video,
+    price: "По запросу",
   },
   {
     id: 6,
