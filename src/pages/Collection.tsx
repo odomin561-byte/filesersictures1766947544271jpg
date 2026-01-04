@@ -6,6 +6,7 @@ import product1 from "@/assets/product-1.jpg";
 import product2 from "@/assets/product-2.jpg";
 import product3 from "@/assets/product-3.jpg";
 import product4Video from "@/assets/product-4-video.mp4";
+import product6Video from "@/assets/product-6-video.mp4";
 
 const allProducts = [
   {
@@ -50,11 +51,11 @@ const allProducts = [
   },
   {
     id: 6,
-    name: "Золотая Осень",
+    name: "Видео-коллекция",
     category: "Вечерние",
-    description: "Тёплые золотистые тона для осеннего сезона. Эксклюзивная ручная работа.",
-    image: product2,
-    price: "18 000 ₽",
+    description: "Эксклюзивный обзор наших лучших изделий в движении.",
+    video: product6Video,
+    price: "По запросу",
   },
   {
     id: 7,
