@@ -8,6 +8,7 @@ import product3 from "@/assets/product-3.jpg";
 import product4Video from "@/assets/product-4-video.mp4";
 import product5Video from "@/assets/product-5-video.mp4";
 import product6Video from "@/assets/product-6-video.mp4";
+import product7 from "@/assets/product-7.jpg";
 
 const allProducts = [
   {
@@ -65,6 +66,14 @@ const allProducts = [
     description: "Мягкие розовые переливы для романтических натур.",
     image: product3,
     price: "10 500 ₽",
+  },
+  {
+    id: 8,
+    name: "Жемчужный Люкс",
+    category: "Вечерние",
+    description: "Элегантная сумочка из белого жемчуга с золотой цепочкой. Идеальный аксессуар для особого случая.",
+    image: product7,
+    price: "18 900 ₽",
   },
 ];
 
