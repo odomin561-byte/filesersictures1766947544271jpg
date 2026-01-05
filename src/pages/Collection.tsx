@@ -3,7 +3,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 import product1 from "@/assets/product-1.jpg";
-import product2 from "@/assets/product-2-edited.jpg";
+import product2 from "@/assets/product-2-new.jpg";
 import product3 from "@/assets/product-3.jpg";
 import product4Video from "@/assets/product-4-video.mp4";
 import product5Video from "@/assets/product-5-video.mp4";
@@ -21,9 +21,9 @@ const allProducts = [
   },
   {
     id: 2,
-    name: "Шампань Делюкс",
+    name: "Бирюзовый Шарм",
     category: "Вечерние",
-    description: "Тёплые оттенки шампанского для особого вечера. Создана из редких японских бусин.",
+    description: "Жемчужная сумочка на фоне изумрудного шёлка. Идеальное сочетание элегантности и роскоши.",
     image: product2,
     price: "15 800 ₽",
   },
