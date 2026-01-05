@@ -6,7 +6,7 @@ import AboutPreview from "@/components/home/AboutPreview";
 
 import heroImage from "@/assets/hero-pearl-bag.jpg";
 import product1 from "@/assets/product-1.jpg";
-import product2 from "@/assets/product-2.jpg";
+import product2 from "@/assets/product-2-edited.jpg";
 import product3 from "@/assets/product-3.jpg";
 import craftImage from "@/assets/craft-process.jpg";
 
