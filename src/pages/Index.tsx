@@ -25,8 +25,8 @@ const featuredProducts = [
   },
   {
     id: 3,
-    name: "Розовая Мечта",
-    description: "Яркий акцент для смелых образов",
+    name: "Рубиновый Блеск",
+    description: "Роскошный красный для незабываемого выхода",
     image: product3,
   },
 ];
