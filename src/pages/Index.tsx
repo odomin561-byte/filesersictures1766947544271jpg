@@ -6,7 +6,7 @@ import AboutPreview from "@/components/home/AboutPreview";
 
 import heroImage from "@/assets/hero-pearl-bag.jpg";
 import product1 from "@/assets/product-1.jpg";
-import product2 from "@/assets/product-2-edited.jpg";
+import product7 from "@/assets/product-7.jpg";
 import product3 from "@/assets/product-3.jpg";
 import craftImage from "@/assets/craft-process.jpg";
 
@@ -19,9 +19,9 @@ const featuredProducts = [
   },
   {
     id: 2,
-    name: "Шампань Делюкс",
-    description: "Тёплые оттенки для особого вечера",
-    image: product2,
+    name: "Перламутровая Грация",
+    description: "Изысканный жемчуг с золотым акцентом",
+    image: product7,
   },
   {
     id: 3,
