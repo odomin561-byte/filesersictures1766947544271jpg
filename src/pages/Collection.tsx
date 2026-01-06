@@ -17,7 +17,6 @@ const allProducts = [
     category: "Вечерние",
     description: "Классическая элегантность в каждой бусине. Идеально подходит для свадеб и торжеств.",
     image: product1,
-    price: "12 500 ₽",
   },
   {
     id: 2,
@@ -25,15 +24,13 @@ const allProducts = [
     category: "Вечерние",
     description: "Жемчужная сумочка на фоне изумрудного шёлка. Идеальное сочетание элегантности и роскоши.",
     image: product2,
-    price: "15 800 ₽",
   },
   {
     id: 3,
-    name: "Розовая Мечта",
-    category: "Повседневные",
-    description: "Яркий и стильный акцент для смелых образов. Лёгкая и практичная.",
+    name: "Чёрный Оникс",
+    category: "Вечерние",
+    description: "Изысканная сумочка из чёрных бусин с винтажной застёжкой. Воплощение утончённой роскоши.",
     image: product3,
-    price: "9 200 ₽",
   },
   {
     id: 4,
@@ -41,7 +38,6 @@ const allProducts = [
     category: "Вечерние",
     description: "Посмотрите наши изделия в движении. Эксклюзивная демонстрация мастерства.",
     video: product4Video,
-    price: "По запросу",
   },
   {
     id: 5,
@@ -49,7 +45,6 @@ const allProducts = [
     category: "Классические",
     description: "Посмотрите классические модели нашей коллекции в движении.",
     video: product5Video,
-    price: "По запросу",
   },
   {
     id: 6,
@@ -57,7 +52,6 @@ const allProducts = [
     category: "Вечерние",
     description: "Эксклюзивный обзор наших лучших изделий в движении.",
     video: product6Video,
-    price: "По запросу",
   },
   {
     id: 7,
@@ -65,7 +59,6 @@ const allProducts = [
     category: "Повседневные",
     description: "Мягкие розовые переливы для романтических натур.",
     image: product3,
-    price: "10 500 ₽",
   },
   {
     id: 8,
@@ -73,7 +66,6 @@ const allProducts = [
     category: "Вечерние",
     description: "Элегантная сумочка из белого жемчуга с золотой цепочкой. Идеальный аксессуар для особого случая.",
     image: product7,
-    price: "18 900 ₽",
   },
 ];
 
@@ -161,18 +153,13 @@ const Collection = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <h3 className="font-display text-xl font-medium group-hover:text-rose-gold transition-colors">
-                        {product.name}
-                      </h3>
-                      <p className="text-muted-foreground text-sm mt-2 line-clamp-2">
-                        {product.description}
-                      </p>
-                    </div>
-                    <span className="font-display text-lg text-rose-gold whitespace-nowrap ml-4">
-                      {product.price}
-                    </span>
+                  <div>
+                    <h3 className="font-display text-xl font-medium group-hover:text-rose-gold transition-colors">
+                      {product.name}
+                    </h3>
+                    <p className="text-muted-foreground text-sm mt-2 line-clamp-2">
+                      {product.description}
+                    </p>
                   </div>
                 </article>
               ))}
