@@ -9,6 +9,7 @@ import product4Video from "@/assets/product-4-video.mp4";
 import product5Video from "@/assets/product-5-video.mp4";
 import product6Video from "@/assets/product-6-video.mp4";
 import product7 from "@/assets/product-7.jpg";
+import product8 from "@/assets/product-8.jpg";
 
 const allProducts = [
   {
@@ -66,6 +67,13 @@ const allProducts = [
     category: "Вечерние",
     description: "Элегантная сумочка из белого жемчуга с золотой цепочкой. Идеальный аксессуар для особого случая.",
     image: product7,
+  },
+  {
+    id: 9,
+    name: "Слоновая Кость",
+    category: "Классические",
+    description: "Изящная сумочка из кремовых жемчужин. Безупречная классика для утончённых натур.",
+    image: product8,
   },
 ];
 
