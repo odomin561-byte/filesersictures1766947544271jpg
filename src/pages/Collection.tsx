@@ -8,6 +8,7 @@ import product3 from "@/assets/product-3.jpg";
 import product4Video from "@/assets/product-4-video.mp4";
 import product5Video from "@/assets/product-5-video.mp4";
 import product6Video from "@/assets/product-6-video.mp4";
+import product6 from "@/assets/product-6.jpg";
 import product7 from "@/assets/product-7.jpg";
 import product8 from "@/assets/product-8.jpg";
 
@@ -49,10 +50,10 @@ const allProducts = [
   },
   {
     id: 6,
-    name: "Видео-коллекция",
+    name: "Нежность Рассвета",
     category: "Вечерние",
-    description: "Эксклюзивный обзор наших лучших изделий в движении.",
-    video: product6Video,
+    description: "Роскошная сумочка из переливающихся кристаллов с золотой фурнитурой. Ослепительный аксессуар для торжественных вечеров.",
+    image: product6,
   },
   {
     id: 7,
