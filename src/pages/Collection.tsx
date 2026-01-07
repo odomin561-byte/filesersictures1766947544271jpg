@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer";
 
 import product1 from "@/assets/product-1.jpg";
 import product2 from "@/assets/product-2-new.jpg";
-import product3 from "@/assets/product-3.jpg";
+import product3 from "@/assets/collection-product-3.jpg";
 import product4Video from "@/assets/product-4-video.mp4";
 import product5Video from "@/assets/product-5-video.mp4";
 import product6Video from "@/assets/product-6-video.mp4";
