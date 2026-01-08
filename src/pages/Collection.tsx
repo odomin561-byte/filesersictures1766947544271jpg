@@ -12,6 +12,7 @@ import product6 from "@/assets/product-6.jpg";
 import product7 from "@/assets/product-7.jpg";
 import product8 from "@/assets/product-8.jpg";
 import product7New from "@/assets/product-7-new.jpg";
+import product10 from "@/assets/product-10.jpg";
 
 const allProducts = [
   {
@@ -76,6 +77,13 @@ const allProducts = [
     category: "Классические",
     description: "Изящная сумочка из кремовых жемчужин. Безупречная классика для утончённых натур.",
     image: product8,
+  },
+  {
+    id: 10,
+    name: "",
+    category: "Вечерние",
+    description: "",
+    image: product10,
   },
 ];
 
