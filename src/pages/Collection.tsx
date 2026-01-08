@@ -11,6 +11,7 @@ import product6Video from "@/assets/product-6-video.mp4";
 import product6 from "@/assets/product-6.jpg";
 import product7 from "@/assets/product-7.jpg";
 import product8 from "@/assets/product-8.jpg";
+import product7New from "@/assets/product-7-new.jpg";
 
 const allProducts = [
   {
@@ -57,10 +58,10 @@ const allProducts = [
   },
   {
     id: 7,
-    name: "Нежность Рассвета",
+    name: "Полночная Тайна",
     category: "Повседневные",
-    description: "Мягкие розовые переливы для романтических натур.",
-    image: product3,
+    description: "Элегантная чёрная сумочка с винтажной серебряной фурнитурой. Загадочный аксессуар для особых вечеров.",
+    image: product7New,
   },
   {
     id: 8,
