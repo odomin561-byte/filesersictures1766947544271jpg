@@ -161,6 +161,11 @@ const Collection = () => {
                         {product.category}
                       </span>
                     </div>
+                    <div className="absolute bottom-4 right-4">
+                      <span className="inline-flex items-center justify-center w-10 h-10 bg-pearl-shimmer/90 backdrop-blur-sm text-foreground font-display text-lg font-medium rounded-full shadow-soft">
+                        {product.id}
+                      </span>
+                    </div>
                   </div>
                   <div>
                     <h3 className="font-display text-xl font-medium group-hover:text-rose-gold transition-colors">
