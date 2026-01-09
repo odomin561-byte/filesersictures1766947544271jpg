@@ -37,7 +37,7 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
           </h1>
           
           <p className="font-body text-muted-foreground text-lg md:text-xl leading-relaxed mb-10 animate-fade-in-up opacity-0" style={{ animationDelay: '0.6s' }}>
-            Уникальные сумочки из натурального жемчуга и изысканных бусин, 
+            Уникальные сумочки из жемчуга и изысканных бусин, 
             созданные с любовью вручную для особенных моментов вашей жизни.
           </p>
           
