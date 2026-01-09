@@ -20,7 +20,7 @@ const FeaturedSection = ({ products }: FeaturedSectionProps) => {
             Избранное
           </span>
           <h2 className="font-display text-3xl md:text-5xl font-light mt-4">
-            Наши <span className="italic font-medium">лучшие</span> работы
+            Мои <span className="italic font-medium">лучшие</span> работы
           </h2>
           <div className="w-20 h-[1px] bg-rose-gold mx-auto mt-6" />
         </div>
