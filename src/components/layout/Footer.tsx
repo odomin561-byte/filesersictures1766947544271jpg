@@ -35,7 +35,7 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-lg font-medium mb-4">Контакты</h4>
             <div className="flex flex-col gap-2 text-muted-foreground text-sm">
-              <p>info@pearlelegance.ru</p>
+              <p>o.artemova2011@yandex.ru</p>
               <p>+7 (999) 123-45-67</p>
               <div className="flex gap-4 mt-4">
                 <a href="#" className="hover:text-rose-gold transition-colors">

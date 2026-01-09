@@ -170,8 +170,8 @@ const About = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
                 <div className="bg-pearl-shimmer p-6 rounded-lg shadow-soft">
                   <h3 className="font-display text-lg font-medium mb-2">Email</h3>
-                  <a href="mailto:info@pearlelegance.ru" className="text-rose-gold hover:underline">
-                    info@pearlelegance.ru
+                  <a href="mailto:o.artemova2011@yandex.ru" className="text-rose-gold hover:underline">
+                    o.artemova2011@yandex.ru
                   </a>
                 </div>
                 <div className="bg-pearl-shimmer p-6 rounded-lg shadow-soft">
