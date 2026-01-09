@@ -45,7 +45,7 @@ const AboutPreview = ({ craftImage }: AboutPreviewProps) => {
 
             <div className="flex flex-wrap gap-8 mb-10">
               <div>
-                <span className="font-display text-4xl font-light text-rose-gold">150+</span>
+                <span className="font-display text-4xl font-light text-rose-gold">50</span>
                 <p className="text-muted-foreground text-sm mt-1">Уникальных работ</p>
               </div>
               <div>
