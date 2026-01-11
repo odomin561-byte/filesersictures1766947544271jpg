@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import ContactFormDialog from "@/components/ContactFormDialog";
 
 import product1 from "@/assets/product-1.jpg";
 import product2 from "@/assets/product-2-new.jpg";
@@ -200,12 +201,13 @@ const Collection = () => {
               Мы создаём сумочки по индивидуальным эскизам. 
               Свяжитесь с нами для обсуждения вашей уникальной идеи.
             </p>
-            <a
-              href="/about"
-              className="inline-block bg-rose-gold text-primary-foreground px-8 py-4 rounded-lg font-body tracking-wide hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
-            >
-              Связаться с нами
-            </a>
+            <ContactFormDialog
+              trigger={
+                <button className="inline-block bg-rose-gold text-primary-foreground px-8 py-4 rounded-lg font-body tracking-wide hover:shadow-lg hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                  Связаться с нами
+                </button>
+              }
+            />
           </div>
         </section>
       </main>
