@@ -13,7 +13,7 @@ const Footer = () => {
               Pearl<span className="text-rose-gold">Elegance</span>
             </Link>
             <p className="mt-4 text-muted-foreground font-body text-sm leading-relaxed">
-              Ручная работа с любовью. Каждая сумочка — это уникальное произведение искусства из натурального жемчуга и бусин.
+              Ручная работа с любовью. Каждая сумочка — это уникальное произведение искусства из жемчуга и бусин.
             </p>
           </div>
 
