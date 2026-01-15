@@ -12,6 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 interface ContactFormDialogProps {
   trigger?: React.ReactNode;
@@ -33,17 +34,32 @@ const ContactFormDialog = ({ trigger }: ContactFormDialogProps) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const { data, error } = await supabase.functions.invoke('send-telegram', {
+        body: formData,
+      });
 
-    toast({
-      title: "Заявка отправлена!",
-      description: "Мы свяжемся с вами в ближайшее время.",
-    });
+      if (error) {
+        throw error;
+      }
 
-    setFormData({ name: "", phone: "", email: "", message: "" });
-    setIsSubmitting(false);
-    setOpen(false);
+      toast({
+        title: "Заявка отправлена!",
+        description: "Мы свяжемся с вами в ближайшее время.",
+      });
+
+      setFormData({ name: "", phone: "", email: "", message: "" });
+      setOpen(false);
+    } catch (error) {
+      console.error('Error sending form:', error);
+      toast({
+        title: "Ошибка",
+        description: "Не удалось отправить заявку. Попробуйте позже.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
