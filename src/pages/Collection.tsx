@@ -14,6 +14,7 @@ import product7 from "@/assets/product-7.jpg";
 import product8 from "@/assets/product-8.jpg";
 import product7New from "@/assets/product-7-new.jpg";
 import product10 from "@/assets/product-10.jpg";
+import product11Video from "@/assets/product-11-video.mp4";
 
 const allProducts = [
   {
@@ -85,6 +86,13 @@ const allProducts = [
     category: "Вечерние",
     description: "",
     image: product10,
+  },
+  {
+    id: 11,
+    name: "Видео-презентация",
+    category: "Вечерние",
+    description: "Эксклюзивная демонстрация наших изделий.",
+    video: product11Video,
   },
 ];
 
