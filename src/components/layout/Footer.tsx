@@ -9,7 +9,7 @@ const Footer = () => {
         <img 
           src={towerSilhouette} 
           alt="" 
-          className="h-[80%] w-auto opacity-[0.08] object-contain"
+          className="h-[80%] w-auto opacity-[0.15] object-contain"
           aria-hidden="true"
         />
       </div>
