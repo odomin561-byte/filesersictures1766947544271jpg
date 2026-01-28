@@ -4,12 +4,22 @@ import towerSilhouette from "@/assets/tower-silhouette.png";
 const Footer = () => {
   return (
     <footer className="bg-ivory border-t border-border/50 py-12 md:py-16 relative overflow-hidden">
-      {/* Tower silhouette background */}
-      <div className="absolute inset-0 flex justify-center items-end pointer-events-none">
+      {/* Tower silhouette background with text */}
+      <div className="absolute inset-0 flex flex-col justify-center items-center pointer-events-none">
+        <div className="flex items-center gap-2 mb-2 font-display text-2xl md:text-3xl font-medium text-foreground">
+          <span>Я</span>
+          <svg 
+            className="w-6 h-6 md:w-8 md:h-8 text-red-500 fill-current" 
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          <span>Белорецк</span>
+        </div>
         <img 
           src={towerSilhouette} 
           alt="" 
-          className="h-[80%] w-auto opacity-100 object-contain"
+          className="h-[70%] w-auto opacity-100 object-contain"
           aria-hidden="true"
         />
       </div>
