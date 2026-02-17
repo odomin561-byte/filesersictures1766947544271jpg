@@ -167,20 +167,6 @@ const About = () => {
                 Будем рады ответить на ваши вопросы и обсудить индивидуальный заказ.
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-                <div className="bg-pearl-shimmer p-6 rounded-lg shadow-soft">
-                  <h3 className="font-display text-lg font-medium mb-2">Email</h3>
-                  <a href="mailto:o.artemova2011@yandex.ru" className="text-rose-gold hover:underline">
-                    o.artemova2011@yandex.ru
-                  </a>
-                </div>
-                <div className="bg-pearl-shimmer p-6 rounded-lg shadow-soft">
-                  <h3 className="font-display text-lg font-medium mb-2">Телефон</h3>
-                  <a href="tel:+79656515859" className="text-rose-gold hover:underline">
-                    +7 965 651 58 59
-                  </a>
-                </div>
-              </div>
 
               <div className="flex justify-center gap-6">
                 <a 
