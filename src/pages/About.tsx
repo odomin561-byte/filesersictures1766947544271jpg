@@ -188,7 +188,9 @@ const About = () => {
                   </svg>
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.instagram.com/my.crystal_bag?igsh=MTA2dHQ3eWd0emVyZQ%3D%3D&utm_source=qr" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-pearl-shimmer flex items-center justify-center text-foreground hover:bg-champagne hover:text-rose-gold transition-all duration-300"
                   aria-label="Telegram"
                 >
