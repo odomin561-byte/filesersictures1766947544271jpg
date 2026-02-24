@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
@@ -7,6 +8,7 @@ import { supabase } from "@/integrations/supabase/client";
 const ContactForm = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const { toast } = useToast();
 
@@ -47,7 +49,7 @@ const ContactForm = () => {
           name: "Заявка с сайта",
           phone: phone.trim(),
           email: email.trim(),
-          message: "",
+          message: message.trim(),
         },
       });
 
@@ -59,6 +61,7 @@ const ContactForm = () => {
       });
       setPhone("");
       setEmail("");
+      setMessage("");
     } catch {
       toast({
         title: "Ошибка",
@@ -100,6 +103,13 @@ const ContactForm = () => {
               onChange={(e) => setEmail(e.target.value)}
               className="bg-background/80 border-border/50 focus:border-rose-gold/50"
               maxLength={255}
+            />
+            <Textarea
+              placeholder="Сообщение"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              className="bg-background/80 border-border/50 focus:border-rose-gold/50 min-h-[100px]"
+              maxLength={1000}
             />
             <Button
               type="submit"
