@@ -8,7 +8,7 @@ import { supabase } from "@/integrations/supabase/client";
 const ContactForm = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  
   const [loading, setLoading] = useState(false);
   const { toast } = useToast();
 
