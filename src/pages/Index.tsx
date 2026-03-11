@@ -3,7 +3,7 @@ import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/home/HeroSection";
 import FeaturedSection from "@/components/home/FeaturedSection";
 import AboutPreview from "@/components/home/AboutPreview";
-import ContactForm from "@/components/home/ContactForm";
+
 
 import heroImage from "@/assets/hero-pearl-bag.jpg";
 import product1 from "@/assets/product-1.jpg";
