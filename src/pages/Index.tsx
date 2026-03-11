@@ -40,7 +40,7 @@ const Index = () => {
         <HeroSection heroImage={heroImage} />
         <FeaturedSection products={featuredProducts} />
         <AboutPreview craftImage={craftImage} />
-        <ContactForm />
+        
       </main>
       <Footer />
     </div>
